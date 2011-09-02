@@ -17,6 +17,7 @@
 int main()
 {
 
+	std::cout << "JACKASS!" << endl;
 	setValues();
 	getValues();
 
