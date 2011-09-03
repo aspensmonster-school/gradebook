@@ -30,6 +30,7 @@ int main()
 
 	//cout << "JACKASS!" << endl;
 	//cout << "NO." << endl;
+	cout << "I'm confused." << endl;
 	setValues();
 	getValues();
 
