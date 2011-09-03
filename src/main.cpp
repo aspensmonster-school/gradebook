@@ -22,6 +22,9 @@ using namespace std;
 
 //Be sure to set build mode to release.
 
+//Looks like I can't have separate projects for different architectures. Will have to work with different build-configs. Which is fine
+//but I'll need to be careful about which save/build/run grouping I'm using.
+
 int main()
 {
 
