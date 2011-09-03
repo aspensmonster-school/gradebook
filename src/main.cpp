@@ -29,6 +29,7 @@ int main()
 {
 
 	//cout << "JACKASS!" << endl;
+	//cout << "NO." << endl;
 	setValues();
 	getValues();
 
