@@ -28,7 +28,7 @@ using namespace std;
 int main()
 {
 
-	cout << "JACKASS!" << endl;
+	//cout << "JACKASS!" << endl;
 	setValues();
 	getValues();
 
