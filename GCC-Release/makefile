@@ -2,8 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#test comment
-
 -include ../makefile.init
 
 RM := rm -rf
