@@ -10,7 +10,7 @@
 #include <string>		//required for strings
 #include "functions.h"
 
-using namespace std;
+//using namespace std;
 
 //All sorts of badness here. Global vars defined in a header. Functions defined in a header. Ick ick ick.
 
@@ -30,7 +30,7 @@ int main()
 
 	//cout << "JACKASS!" << endl;
 	//cout << "NO." << endl;
-	cout << "I'm confused." << endl;
+	//cout << "I'm confused." << endl;
 	setValues();
 	getValues();
 
