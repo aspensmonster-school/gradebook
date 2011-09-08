@@ -12,6 +12,8 @@
 
 using namespace std;
 
+//comment.
+
 //Declare and initialize weights
 const double testOneWeight = .25;
 const double testTwoWeight = .25;
