@@ -29,6 +29,8 @@ double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //test new branch.
 
+//merge looked successful. continuing on master.
+
 void setValues()
 {
 	cout << "Welcome to the grade calculator!" << endl;
