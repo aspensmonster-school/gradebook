@@ -10,11 +10,6 @@
 #ifndef FUNCTIONS_H_
 #define FUNCTIONS_H_
 
-
-
-
-#endif /* FUNCTIONS_H_ */
-
 using namespace std;
 
 //Declare and initialize weights
@@ -55,3 +50,5 @@ void getValues()
 	grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
 	cout << "\nAccording to my calculations, you're a faggot-- I mean you earned a: " << grade;
 }
+
+#endif
