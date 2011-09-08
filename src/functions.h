@@ -12,7 +12,7 @@
 
 using namespace std;
 
-//comment.
+//I'm actually not sure why this works. I didn't think you could declare vars in headers. Huh.
 
 //Declare and initialize weights
 const double testOneWeight = .25;
