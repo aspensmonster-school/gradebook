@@ -35,13 +35,9 @@ double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //more on master.
 
-//more blank commits -__-
+//more blank commits
 
-
-//I've got a SHITTON to learn about git :(
-
-//added branch anotherbranch.
-
+//wtf.
 
 void setValues()
 {
