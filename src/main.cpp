@@ -43,3 +43,5 @@ int main()
 //in theory this should be a local branch.
 
 //and this could be another feature on the branch.
+
+//and now I've commited the feature to the remote branch, switched to master branch, pulled from remote master, and now i've merged from remote branch.
