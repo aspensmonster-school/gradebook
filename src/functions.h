@@ -31,6 +31,8 @@ double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //merge looked successful. continuing on master.
 
+//another feature!
+
 void setValues()
 {
 	cout << "Welcome to the grade calculator!" << endl;
