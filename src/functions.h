@@ -30,6 +30,8 @@ double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //Obtain strings and grades
 
+//test new branch.
+
 void setValues()
 {
 	cout << "Welcome to the grade calculator!" << endl;
