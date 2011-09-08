@@ -39,6 +39,8 @@ double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //wtf.
 
+//yeah. I've got a long way to go.
+
 void setValues()
 {
 	cout << "Welcome to the grade calculator!" << endl;
