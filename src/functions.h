@@ -37,6 +37,8 @@ double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //more blank commits -__-
 
+//I've got a SHITTON to learn about git :(
+
 void setValues()
 {
 	cout << "Welcome to the grade calculator!" << endl;
