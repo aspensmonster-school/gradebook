@@ -25,6 +25,8 @@
 //Looks like I can't have separate projects for different architectures. Will have to work with different build-configs. Which is fine
 //but I'll need to be careful about which save/build/run grouping I'm using.
 
+//Gonna try to commit from winbloze at school now.
+
 int main()
 {
 
