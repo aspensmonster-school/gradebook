@@ -14,6 +14,8 @@ using namespace std;
 
 //I'm actually not sure why this works. I didn't think you could declare vars in headers. Huh.
 
+//a different comment meant to initiate a merge conflict.
+
 //Declare and initialize weights
 const double testOneWeight = .25;
 const double testTwoWeight = .25;
