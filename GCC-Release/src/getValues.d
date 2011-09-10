@@ -1,1 +1,3 @@
-src/getValues.d src/getValues.o: ../src/getValues.cpp
+src/getValues.d: ../src/getValues.cpp ../src/functions.h
+
+../src/functions.h:

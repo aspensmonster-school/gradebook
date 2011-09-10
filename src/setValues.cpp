@@ -4,8 +4,9 @@
  *  Created on: Sep 9, 2011
  *      Author: preston
  */
-/*
+
 #include<iostream>
+#include "functions.h"
 
 using namespace std;
 
@@ -23,4 +24,4 @@ void setValues()
 	cout << "\nProvide student final exam grade: ";
 		cin >> finalExamGrade;
 }
-*/
+

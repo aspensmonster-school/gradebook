@@ -5,10 +5,10 @@
  *      Author: preston
  */
 
-
-#include <iostream> 	//required for cout cin
-#include <string>		//required for strings
 #include "functions.h"
+
+double testOneGrade, testTwoGrade, finalExamGrade, grade;
+std::string studentName, studentSocial;
 
 //using namespace std;
 
