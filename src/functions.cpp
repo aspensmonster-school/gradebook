@@ -11,6 +11,7 @@
 
 using namespace std;
 
+//This function will output the values of the variables.
 void getValues()
 {
 
@@ -24,6 +25,7 @@ void getValues()
 
 }
 
+//This function will set the values of the variables.
 void setValues()
 {
 	cout << "Welcome to the grade calculator!" << endl;
