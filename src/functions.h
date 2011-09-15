@@ -24,6 +24,6 @@ extern double testOneGrade, testTwoGrade, finalExamGrade, grade;
 
 //Declare functions
 void setValues();
-void getValues();
+void outputValues();
 
 #endif

@@ -12,7 +12,7 @@
 using namespace std;
 
 //This function will output the values of the variables.
-void getValues()
+void outputValues()
 {
 
 	cout << "\nName of Student: " << studentName << endl;
