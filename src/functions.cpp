@@ -21,7 +21,7 @@ void getValues()
 	cout << "Test 2: " << testTwoGrade << endl;
 	cout << "Final Exam: " << finalExamGrade << endl;
 	grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
-	cout << "\nAccording to my calculations, you're a faggot-- I mean you earned a: " << grade;
+	cout << "\nAccording to my calculations you earned a: " << grade;
 
 }
 
