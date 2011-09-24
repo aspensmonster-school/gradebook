@@ -133,7 +133,7 @@ int main()
 	//And now to output
 
 	ofstream ofs;
-	ofs.open("/home/preston/git/firstProject/src/outputs.txt");
+	ofs.open("/home/preston/workspace/firstProject/src/outputs.txt");
 
 	for(int i = 0 ; i < counter ; i++)
 	{

@@ -1,0 +1,48 @@
+           Student Name: Stupid Assignment
+                 Social: 555-55-5555
+             First Test: 78.00
+            Second Test: 89.00
+             Final Exam: 90.00
+          Numeric Grade: 86.75
+           Letter Grade: B
+==================================================
+           Student Name: Warking Program
+                 Social: 666-66-6666
+             First Test: 66.00
+            Second Test: 66.00
+             Final Exam: 66.00
+          Numeric Grade: 66.00
+           Letter Grade: D
+==================================================
+           Student Name: Wgrking Program
+                 Social: 666-66-6666
+             First Test: 66.00
+            Second Test: 66.00
+             Final Exam: 66.00
+          Numeric Grade: 66.00
+           Letter Grade: D
+==================================================
+           Student Name: Working Program
+                 Social: 666-66-6666
+             First Test: 66.00
+            Second Test: 66.00
+             Final Exam: 66.00
+          Numeric Grade: 66.00
+           Letter Grade: D
+==================================================
+           Student Name: Xray John
+                 Social: 444-44-4444
+             First Test: 56.00
+            Second Test: 67.00
+             Final Exam: 78.00
+          Numeric Grade: 69.75
+           Letter Grade: D
+==================================================
+           Student Name: Zulu Yankee
+                 Social: 333-33-3333
+             First Test: 12.00
+            Second Test: 23.00
+             Final Exam: 34.00
+          Numeric Grade: 25.75
+           Letter Grade: F
+==================================================
