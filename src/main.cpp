@@ -58,12 +58,7 @@ int main()
 
 	Student studentArray[counter];
 
-	ofstream ofs;
-	ofs.open("/home/preston/git/firstProject/src/outputs.txt");
-
 	//Cycle through the input file, creating the Student objects
-	//and outputting results to file.
-	//for(int i = 0 ; ifs.good() ; i++)
 
 	for(int i = 0 ; ifs.good() ; i++)
 	{
@@ -90,7 +85,7 @@ int main()
 		studentArray[i].setGrades(test1,test2,final);
 
 		//Output our student object's variables to file
-
+/*
 		ofs << setw(25) << fixed << showpoint << setprecision(2);
 		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Student Name: " << left << (studentArray[i].getInfo())[0] << "\n";
 		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Social: " << left << (studentArray[i].getInfo())[1] << endl;
@@ -100,7 +95,7 @@ int main()
 		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Numeric Grade: " << left <<  (studentArray[i].getGrades())[3] << endl;
 		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Letter Grade: " << left << studentArray[i].getLetterGrade() << endl;
 		ofs << setw(25) << fixed << showpoint << setprecision(2) << "==================================================" << endl;
-
+*/
 		/*
 		cout << "Got inside last for loop." << endl;
 		cout << "Student Name: " << (studentArray[i].getInfo())[0] << endl;
@@ -112,7 +107,46 @@ int main()
 		cout << "Letter grade: " << studentArray[i].getLetterGrade() << endl;
 		*/
 
-		cout << "Done with iteration of for loop." << endl;
+		//cout << "Done with iteration of for loop." << endl;
+	}
+
+	//And now we must sort our array via first name.
+	//And yes, I know it's a shitty sort implementation but it's 3AM and it
+	//fucking works.
+
+	for(int i = 0 ; i < counter ; i++)
+	{
+		for(int j = i+1 ; j < counter ; j++)
+		{
+			//if ((studentArray[i].getInfo())[0] < (studentArray[j].getInfo())[0])
+			if ((studentArray[i].getInfo())[0].compare((studentArray[j].getInfo())[0] ) > 0)
+			{
+				cout << "Alphabetize!";
+				Student temp = studentArray[i];
+				studentArray[i]=studentArray[j] ;
+				studentArray[j]=temp;
+			}
+		}
+		cout << "Initial plus one";
+	}
+
+	//And now to output
+
+	ofstream ofs;
+	ofs.open("/home/preston/git/firstProject/src/outputs.txt");
+
+	for(int i = 0 ; i < counter ; i++)
+	{
+		ofs << setw(25) << fixed << showpoint << setprecision(2);
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Student Name: " << left << (studentArray[i].getInfo())[0] << "\n";
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Social: " << left << (studentArray[i].getInfo())[1] << endl;
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "First Test: " << left <<  (studentArray[i].getGrades())[0] << endl;
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Second Test: " << left <<  (studentArray[i].getGrades())[1] << endl;
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Final Exam: " << left <<  (studentArray[i].getGrades())[2] << endl;
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Numeric Grade: " << left <<  (studentArray[i].getGrades())[3] << endl;
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Letter Grade: " << left << studentArray[i].getLetterGrade() << endl;
+		ofs << setw(25) << fixed << showpoint << setprecision(2) << "==================================================" << endl;
+
 	}
 
 	return 0;
