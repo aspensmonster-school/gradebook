@@ -4,19 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/getValues.cpp \
-../src/main.cpp \
-../src/setValues.cpp 
+../src/Student.cpp \
+../src/main.cpp 
 
 OBJS += \
-./src/getValues.o \
-./src/main.o \
-./src/setValues.o 
+./src/Student.o \
+./src/main.o 
 
 CPP_DEPS += \
-./src/getValues.d \
-./src/main.d \
-./src/setValues.d 
+./src/Student.d \
+./src/main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
