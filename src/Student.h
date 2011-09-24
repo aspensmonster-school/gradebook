@@ -16,10 +16,11 @@ private:
 
 	//grades themselves.
 	float testOneGrade, testTwoGrade, finalExamGrade, grade;
-	float arr [4];
+	float gradesArray [4];
 
 	//strings
 	std::string studentName, studentSocial, letterGrade;
+	std::string infoArray [2];
 
 	//weights
 	static const double testOneWeight = .25;
@@ -34,10 +35,12 @@ public:
 	//virtual ~Student();
 
 	//Functions
-	float* getGrades();
-	std::string getLetterGrade();
 	void setInfo(std::string,std::string);
 	void setGrades(float,float,float);
+	void setLetterGrade(float);
+	std::string* getInfo();
+	float* getGrades();
+	std::string getLetterGrade();
 
 };
 

@@ -6,13 +6,13 @@
  */
 
 #include "Student.h"
-#include<string>
+
 
 using namespace std;
 
 Student::Student()
 {
-
+	//Dummy constructor
 }
 
 //not currently used, but could come in handy.
@@ -38,9 +38,47 @@ void Student::setGrades(float test1, float test2, float final)
 	testTwoGrade = test2;
 	finalExamGrade = final;
 	grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
-
+	setLetterGrade(grade);
 	//still need to set letterGrade;
 
+}
+
+void Student::setLetterGrade(float finalNumericGrade)
+{
+	if(finalNumericGrade < 60 && finalNumericGrade >= 0)
+	{
+		letterGrade = "F";
+	}
+	else if(finalNumericGrade < 70)
+	{
+		letterGrade = "D";
+	}
+	else if(finalNumericGrade < 80)
+	{
+		letterGrade = "C";
+	}
+	else if(finalNumericGrade < 90)
+	{
+		letterGrade = "B";
+	}
+	else if(finalNumericGrade <= 100)
+	{
+		letterGrade = "A";
+	}
+	else if(finalNumericGrade > 100 || finalNumericGrade < 0)
+	{
+		letterGrade = "Nice try. Run the program again.";
+	}
+}
+
+string* Student::getInfo()
+{
+	string temp [] = {studentName,studentSocial};
+	for (int i = 0 ; i < 2 ; i++)
+	{
+		infoArray[i]=temp[i];
+	}
+	return infoArray;
 }
 
 float* Student::getGrades()
@@ -48,9 +86,9 @@ float* Student::getGrades()
 	float temp [] = {testOneGrade,testTwoGrade,finalExamGrade,grade};
 	for(int i = 0; i < 4 ; i++)
 	{
-		arr[i]=temp[i];
+		gradesArray[i]=temp[i];
 	}
-	return arr;
+	return gradesArray;
 }
 
 string Student::getLetterGrade()
