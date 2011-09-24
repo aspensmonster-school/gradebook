@@ -19,7 +19,7 @@ int main()
 	cout << "This is a test.";
 	//create our ifstream
 	ifstream ifs;
-	ifs.open("inputs.txt");
+	ifs.open("/home/preston/git/firstProject/src/inputs.txt");
 	if (ifs.good())
 		cout << "all-good";
 	//determine how many students are in the input file.
@@ -29,9 +29,13 @@ int main()
 	{
 		string temp;
 		getline(ifs,temp);
-		counter = i;
+		counter = 1;
 	}
 
+	cout << counter;
+	cout << "made it past the first for loop.";
+	ifs.close();
+	ifs.open("/home/preston/git/firstProject/src/inputs.txt");
 	//Create an array of students, size determined previously.
 	Student studentArray[counter];
 
@@ -54,7 +58,10 @@ int main()
 		studentArray[i].setInfo(name,social);
 		studentArray[i].setGrades(test1,test2,final);
 
-		cout << (studentArray[i].getGrades())[1] << endl;
+		cout << "Got inside lst for loop." << endl;
+		cout << "First grade: " << (studentArray[i].getGrades())[0] << endl;
+		cout << "Second grade: " << (studentArray[i].getGrades())[1] << endl;
+		cout << "Exam grade: " << (studentArray[i].getGrades())[2] << endl;
 		//and output to file. We have most of what we need to
 		//output at this point.
 	}
