@@ -17,6 +17,7 @@ static const double testTwoWeight = .25;
 static const double finalExamWeight = .50;
 
 //Declare strings
+//extern std::string studentName, studentSocial;
 extern std::string studentName, studentSocial;
 
 //Declare grades

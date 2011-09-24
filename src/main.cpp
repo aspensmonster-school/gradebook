@@ -7,19 +7,31 @@
  *              then outputs the student info, component grades, and FINAL grade.
  */
 
-#include "functions.h" //contains vars and functions
+#include "Student.h" //contains vars and functions
+#include<iostream>
 
-//Declare our externs from functions.h
-double testOneGrade, testTwoGrade, finalExamGrade, grade;
-std::string studentName, studentSocial;
-
+using namespace std;
 
 int main()
 {
+
+	//Put all students into an array.
+
+	Student student1;
+	ifstream ifs;
+
+
+
+
 	//set the values by prompting user for them
-	setValues();
+	//setValues();
 	//output the values and final grade to screen
-	outputValues();
+	//outputValues();
+
+	//Using Student classes now.
+
+	//Generate array of Student classes from input file, crunch
+	//grades, return Student info and grades to an output file.
 
 	return 0;
 }
