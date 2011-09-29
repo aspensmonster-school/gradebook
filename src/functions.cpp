@@ -21,6 +21,8 @@ int counter(ifstream& ifs)
 		getline(ifs,temp);
 		count = i+1;
 	}
+	//put get pointer back to beginning of stream.
+	ifs.seekg(0, ios::beg);
 	return count;
 }
 
@@ -53,7 +55,7 @@ void parseInput(ifstream& ifs,Student* studentArray)
 		}
 }
 
-void sortInput(Student* studentArray,int count)
+void sortArray(Student* studentArray,int count)
 {
 	for(int i = 0 ; i < count ; i++)
 		{

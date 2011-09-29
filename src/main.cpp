@@ -4,7 +4,12 @@
  *  Created on: Aug 31, 2011
  *      Author: preston
  *     Purpose: Obtains user input for some student info and related grades for the student, crunches a final grade,
- *              then outputs the student info, component grades, and FINAL grade.
+ *              then outputs the student info, component grades, and FINAL grade. The user input is passed in the form
+ *              of an input file (along with a call to the user to specify file paths).
+ *              Columns are comma delimited, and rows are newline delimited. In other words, the input
+ *              file basically has the contents of a table of students and their information and grades.
+ *              The output file is parsed as per requests in the project assignment to make use of various iomanip fields.
+ *              As an added bonus, the output is sorted alphabetically via first name.
  */
 
 #include "Student.h" //contains student object definition
@@ -30,29 +35,26 @@ int main()
 	cout << "Be sure to escape backslashes with another backslash if necessary: ";
 	cin >> fullPathOutput;
 
-	//create our ifstream and open the file.
+	//create our fstreams and open the files.
 	ifstream ifs;
 	ifs.open(fullPathInput.c_str());
-
-	//determine size of Student object array
-	int count = counter(ifs);
-
-	//put get pointer back to beginning of stream.
-	ifs.seekg(0, ios::beg);
-
-	//Create an array of students, size determined previously.
-	Student studentArray[count];
-
-	//Cycle through the input file, creating the Student objects
-	parseInput(ifs,studentArray);
-
-	//Sort the Array
-	sortInput(studentArray,count);
-
-	//And now to output
 	ofstream ofs;
 	ofs.open(fullPathOutput.c_str());
-	parseOutput(ofs,studentArray,count);
+
+	//determine size of Student object array
+	int count = counter(ifs); //functions.h
+
+	//Create an array of students, size determined previously.
+	Student studentArray[count]; //Student.h
+
+	//Cycle through the input file, creating the Student objects
+	parseInput(ifs,studentArray); //functions.h
+
+	//Sort the Array
+	sortArray(studentArray,count); //functions.h
+
+	//And now to output
+	parseOutput(ofs,studentArray,count); //functions.h
 
 	return 0;
 }
