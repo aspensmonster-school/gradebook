@@ -39,7 +39,6 @@ void Student::setGrades(float test1, float test2, float final)
 	finalExamGrade = final;
 	grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
 	setLetterGrade(grade);
-	//still need to set letterGrade;
 
 }
 
