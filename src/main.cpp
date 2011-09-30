@@ -54,5 +54,7 @@ int main()
 	ofs.open(fullPathOutput.c_str());
 	parseOutput(ofs,studentArray,count);
 
+	//arbitrary comment.
+
 	return 0;
 }
