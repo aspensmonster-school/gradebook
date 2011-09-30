@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: Aug 31, 2011
- *      Author: preston
+ *      Author: preston (pmm50)
  *     Purpose: Obtains user input for some student info and related grades for the student, crunches a final grade,
  *              then outputs the student info, component grades, and FINAL grade. The user input is passed in the form
  *              of an input file (along with a call to the user to specify file paths).
@@ -10,6 +10,8 @@
  *              file basically has the contents of a table of students and their information and grades.
  *              The output file is parsed as per requests in the project assignment to make use of various iomanip fields.
  *              As an added bonus, the output is sorted alphabetically via first name.
+ *     Project: 2
+ *
  */
 
 #include "Student.h" //contains student object definition
