@@ -17,8 +17,8 @@ using namespace std;
 
 //Declare functions
 int counter(ifstream&);
-void parseInput(ifstream&,Student*);
+void parseInput(ifstream&,Student*,char);
 void sortArray(Student*,int);
-void parseOutput(ofstream&,Student*,int);
+void parseOutput(ofstream&,Student*,int,char);
 
 #endif /* FUNCTIONS_H_ */

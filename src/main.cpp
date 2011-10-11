@@ -37,6 +37,10 @@ int main()
 	cout << "Be sure to escape backslashes with another backslash if necessary: ";
 	cin >> fullPathOutput;
 
+	char loopType;
+	cout << "Please provide type of looping. 0 for for, 1 for while, and 2 for do-while: ";
+	cin >> loopType;
+
 	//create our fstreams and open the files.
 	ifstream ifs;
 	ifs.open(fullPathInput.c_str());
@@ -50,13 +54,13 @@ int main()
 	Student studentArray[count]; //Student.h
 
 	//Cycle through the input file, creating the Student objects
-	parseInput(ifs,studentArray); //functions.h
+	parseInput(ifs,studentArray,loopType); //functions.h
 
 	//Sort the Array
 	sortArray(studentArray,count); //functions.h
 
 	//And now to output
-	parseOutput(ofs,studentArray,count); //functions.h
+	parseOutput(ofs,studentArray,count,loopType); //functions.h
 
 	//arbitrary comment.
 
