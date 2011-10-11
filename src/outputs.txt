@@ -1,3 +1,27 @@
+           Student Name: Another Student
+                 Social: 123-12-1231
+             First Test: 30.00
+            Second Test: 100.00
+             Final Exam: 100.00
+          Numeric Grade: 82.50
+           Letter Grade: B
+==================================================
+           Student Name: Bravo Man
+                 Social: 234-23-2342
+             First Test: 100.00
+            Second Test: 100.00
+             Final Exam: 100.00
+          Numeric Grade: 100.00
+           Letter Grade: A
+==================================================
+           Student Name: Dumb Student
+                 Social: 456-45-4564
+             First Test: 0.00
+            Second Test: 0.00
+             Final Exam: 0.00
+          Numeric Grade: 0.00
+           Letter Grade: F
+==================================================
            Student Name: Stupid Assignment
                  Social: 555-55-5555
              First Test: 78.00
@@ -37,6 +61,14 @@
              Final Exam: 78.00
           Numeric Grade: 69.75
            Letter Grade: D
+==================================================
+           Student Name: Y uNoStudy
+                 Social: 345-34-3453
+             First Test: 0.00
+            Second Test: 0.00
+             Final Exam: 40.00
+          Numeric Grade: 20.00
+           Letter Grade: F
 ==================================================
            Student Name: Zulu Yankee
                  Social: 333-33-3333

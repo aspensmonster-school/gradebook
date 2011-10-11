@@ -4,3 +4,7 @@ Stupid Assignment,555-55-5555,78,89,90
 Working Program,666-66-6666,66,66,66
 Warking Program,666-66-6666,66,66,66
 Wgrking Program,666-66-6666,66,66,66 
+Another Student,123-12-1231,30,100,100
+Bravo Man,234-23-2342,100,100,100
+Y uNoStudy,345-34-3453,0,0,40
+Dumb Student,456-45-4564,0,0,0
