@@ -9,6 +9,9 @@
 #define STUDENT_H_
 
 #include<string>
+#include<vector>
+
+using namespace std;
 
 class Student {
 
@@ -16,11 +19,11 @@ private:
 
 	//grades themselves.
 	float testOneGrade, testTwoGrade, finalExamGrade, grade;
-	float gradesArray [4];
+	vector<float> gradesArray;
 
 	//strings
-	std::string studentName, studentSocial, letterGrade;
-	std::string infoArray [2];
+	string studentName, studentSocial, letterGrade;
+	vector<string> infoArray;
 
 	//weights
 	static const double testOneWeight = .25;
@@ -30,17 +33,17 @@ private:
 public:
 	//Constructors
 	Student(); //Default dummy constructor
-	Student(std::string,std::string); //this one will take values.
+	Student(string,string); //this one will take values.
 	//Destructors
 	//virtual ~Student();
 
 	//Functions
-	void setInfo(std::string,std::string);
+	void setInfo(string,string);
 	void setGrades(float,float,float);
 	void setLetterGrade(float);
-	std::string* getInfo();
-	float* getGrades();
-	std::string getLetterGrade();
+	vector<string> getInfo();
+	vector<float> getGrades();
+	string getLetterGrade();
 
 };
 

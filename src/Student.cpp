@@ -6,13 +6,15 @@
  */
 
 #include "Student.h"
-
+#include<iostream>
 
 using namespace std;
 
 Student::Student()
 {
-	//Dummy constructor
+	//be sure to instantiate those vectors...
+	//infoArray();
+	//gradesArray();
 }
 
 //not currently used, but could come in handy.
@@ -28,6 +30,8 @@ void Student::setInfo(string name, string social)
 {
 	studentName = name;
 	studentSocial = social;
+	//cout << "info set" << endl;
+	//cout << studentName << " " << studentSocial << endl;
 }
 
 void Student::setGrades(float test1, float test2, float final)
@@ -39,6 +43,9 @@ void Student::setGrades(float test1, float test2, float final)
 	finalExamGrade = final;
 	grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
 	setLetterGrade(grade);
+
+	//cout << "Grades set." << endl;
+	//cout << testOneGrade << " " << testTwoGrade << " " << finalExamGrade << " " << grade << endl;
 
 }
 
@@ -70,22 +77,22 @@ void Student::setLetterGrade(float finalNumericGrade)
 	}
 }
 
-string* Student::getInfo()
+vector<string> Student::getInfo()
 {
 	string temp [] = {studentName,studentSocial};
 	for (int i = 0 ; i < 2 ; i++)
 	{
-		infoArray[i]=temp[i];
+		infoArray.insert(infoArray.begin()+i,temp[i]);
 	}
 	return infoArray;
 }
 
-float* Student::getGrades()
+vector<float> Student::getGrades()
 {
 	float temp [] = {testOneGrade,testTwoGrade,finalExamGrade,grade};
 	for(int i = 0; i < 4 ; i++)
 	{
-		gradesArray[i]=temp[i];
+		gradesArray.insert(gradesArray.begin()+i,temp[i]);
 	}
 	return gradesArray;
 }

@@ -46,6 +46,8 @@ int main()
 	//determine size of Student object array
 	int count = counter(ifs); //functions.h
 
+	//cout << count;
+
 	//Create an array of students, size determined previously.
 	Student studentArray[count]; //Student.h
 

@@ -1,3 +1,5 @@
-src/main.d src/main.o: ../src/main.cpp ../src/functions.h
+src/main.d: ../src/main.cpp ../src/Student.h ../src/functions.h
+
+../src/Student.h:
 
 ../src/functions.h:

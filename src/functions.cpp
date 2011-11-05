@@ -8,6 +8,7 @@
 #include<iostream>
 #include<stdlib.h> //atof
 #include<iomanip> //for setw and setprecision
+#include<vector> //to work with the internal vectors of student objects
 #include "functions.h"
 
 using namespace std;
@@ -51,12 +52,14 @@ void parseInput(ifstream& ifs,Student* studentArray)
 
 			studentArray[i].setInfo(name,social);
 			studentArray[i].setGrades(test1,test2,final);
-
+//			cout << "Loop complete" << endl;
 		}
 }
 
 void sortArray(Student* studentArray,int count)
 {
+	cout << "inside sort" << endl;
+	cout << count;
 	for(int i = 0 ; i < count ; i++)
 		{
 			for(int j = i+1 ; j < count ; j++)
@@ -66,6 +69,7 @@ void sortArray(Student* studentArray,int count)
 					Student temp = studentArray[i];
 					studentArray[i]=studentArray[j] ;
 					studentArray[j]=temp;
+					cout << "lolsort" << endl;
 				}
 			}
 		}
@@ -73,9 +77,15 @@ void sortArray(Student* studentArray,int count)
 
 void parseOutput(ofstream& ofs,Student* studentArray,int count)
 {
+	//cout << "before for loop" << endl;
 	for(int i = 0 ; i < count ; i++)
 		{
+			//cout << "Attempting output parse.";
+			//cout << "Why the fuck isn't this working";
+			//cout << "2" << count << "segfault" << "segfault";
+			//cout << "why so segfault?";
 			ofs << setw(25) << fixed << showpoint << setprecision(2);
+			//cout << "stupid eclipse.";
 			ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Student Name: " << left << (studentArray[i].getInfo())[0] << "\n";
 			ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "Social: " << left << (studentArray[i].getInfo())[1] << endl;
 			ofs << setw(25) << fixed << showpoint << setprecision(2) << right << "First Test: " << left <<  (studentArray[i].getGrades())[0] << endl;
