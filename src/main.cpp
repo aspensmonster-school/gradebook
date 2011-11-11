@@ -60,7 +60,7 @@ int main()
 	//And now to output
 	parseOutput(ofs,studentArray,count); //functions.h
 
-	//arbitrary comment.
+	//arbitrary comment. another commit.
 
 	return 0;
 }
