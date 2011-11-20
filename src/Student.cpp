@@ -8,6 +8,8 @@
 #include "Student.h"
 #include<iostream>
 
+//vectors working
+
 using namespace std;
 
 Student::Student()
