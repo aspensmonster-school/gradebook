@@ -58,8 +58,8 @@ void parseInput(ifstream& ifs,Student* studentArray)
 
 void sortArray(Student* studentArray,int count)
 {
-	cout << "inside sort" << endl;
-	cout << count;
+	//cout << "inside sort" << endl;
+	//cout << count;
 	for(int i = 0 ; i < count ; i++)
 		{
 			for(int j = i+1 ; j < count ; j++)
@@ -69,7 +69,7 @@ void sortArray(Student* studentArray,int count)
 					Student temp = studentArray[i];
 					studentArray[i]=studentArray[j] ;
 					studentArray[j]=temp;
-					cout << "lolsort" << endl;
+					//cout << "lolsort" << endl;
 				}
 			}
 		}
