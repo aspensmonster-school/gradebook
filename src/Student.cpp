@@ -14,6 +14,7 @@ using namespace std;
 
 Student::Student()
 {
+	//studentInfo si;
 	//be sure to instantiate those vectors...
 	//infoArray();
 	//gradesArray();
@@ -25,6 +26,8 @@ Student::Student(string name, string social)
 
 	studentName = name;
 	studentSocial = social;
+	si.studentName = name;
+	si.studentSocial = social;
 
 }
 
@@ -32,9 +35,17 @@ void Student::setInfo(string name, string social)
 {
 	studentName = name;
 	studentSocial = social;
+
 	//cout << "info set" << endl;
 	//cout << studentName << " " << studentSocial << endl;
 }
+
+/*
+void Student::setInfo(studentInfo si)
+{
+
+}
+*/
 
 void Student::setGrades(float test1, float test2, float final)
 

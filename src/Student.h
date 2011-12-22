@@ -15,6 +15,19 @@ using namespace std;
 
 class Student {
 
+	//struct yo!
+	struct studentInfo{
+
+			float testOneGrade;
+			float testTwoGrade;
+			float finalExamGrade;
+			float grade;
+			string studentName;
+			string studentSocial;
+			string letterGrade;
+
+		};
+
 private:
 
 	//grades themselves.
@@ -24,6 +37,9 @@ private:
 	//strings
 	string studentName, studentSocial, letterGrade;
 	vector<string> infoArray;
+
+	//struct with all info
+	studentInfo si;
 
 	//weights
 	static const double testOneWeight = .25;
@@ -39,6 +55,7 @@ public:
 
 	//Functions
 	void setInfo(string,string);
+	//void setInfo(studentInfo si);
 	void setGrades(float,float,float);
 	void setLetterGrade(float);
 	vector<string> getInfo();
