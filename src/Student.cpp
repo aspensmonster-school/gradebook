@@ -35,7 +35,8 @@ void Student::setInfo(string name, string social)
 {
 	studentName = name;
 	studentSocial = social;
-
+	si.studentName = name;
+	si.studentSocial = social;
 	//cout << "info set" << endl;
 	//cout << studentName << " " << studentSocial << endl;
 }
@@ -56,6 +57,12 @@ void Student::setGrades(float test1, float test2, float final)
 	finalExamGrade = final;
 	grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
 	setLetterGrade(grade);
+
+	si.testOneGrade = test1;
+	si.testTwoGrade = test2;
+	si.finalExamGrade = final;
+	si.grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
+	si.letterGrade = setLetterGrade(grade);
 
 	//cout << "Grades set." << endl;
 	//cout << testOneGrade << " " << testTwoGrade << " " << finalExamGrade << " " << grade << endl;
