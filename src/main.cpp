@@ -52,6 +52,7 @@ int main()
 	//cout << count;
 
 	//Create an array of students, size determined previously.
+	/* TODO: Use an STL vector to store students. This way, I can use the better constructors for Students.*/
 	Student studentArray[count]; //Student.h
 
 	//Cycle through the input file, creating the Student objects
