@@ -16,6 +16,7 @@
 
 //test comment.
 //make sure i can push from here too.
+//updated uname on github.
 
 #include "Student.h" //contains student object definition
 #include "functions.h" //contains operational functions
