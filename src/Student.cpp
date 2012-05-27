@@ -62,7 +62,8 @@ void Student::setGrades(float test1, float test2, float final)
 	si.testTwoGrade = test2;
 	si.finalExamGrade = final;
 	si.grade = testOneWeight*testOneGrade + testTwoWeight*testTwoGrade + finalExamWeight*finalExamGrade;
-	si.letterGrade = setLetterGrade(grade);
+	setLetterGrade(si.grade);
+	si.letterGrade = getLetterGrade();
 
 	//cout << "Grades set." << endl;
 	//cout << testOneGrade << " " << testTwoGrade << " " << finalExamGrade << " " << grade << endl;
