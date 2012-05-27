@@ -9,6 +9,11 @@
 #include<iostream>
 
 //vectors working
+//still learning the nuances of git.
+//apparently the last time I commited
+//it was with a different user...?
+//threw my laptop's HEAD off from
+//origin/master FETCH_HEAD ... so confused.
 
 using namespace std;
 
